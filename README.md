@@ -19,8 +19,8 @@ A browser-based control panel for the [MAKCU](https://github.com/MAKCU) hardware
 ## 📁 Project Structure
 
 ```
-makcu_multitool/
-├── makcu_web.py          # Main Flask app + hardware control
+2PC Universal Makcu Recoil Control/
+├── makcu_multitool-1-8-0.py       # Main Flask app + hardware control
 ├── recorder.py           # Path recorder (F1 to start/stop)
 ├── requirements.txt
 ├── CLAUDE.md
@@ -50,13 +50,14 @@ makcu_multitool/
 ### Starting the Control Panel
 
 ```bash
-python makcu_web.py
+python makcu_multitool-1-8-0.py
 ```
 
 The console will print the local IP address:
 ```
  * Running on http://127.0.0.1:5000
- * Running on http://192.168.0.120:5000
+ * Running on http://192.168.0.xxx:5000
+ * For example mine was http://192.168.0.120:5000
 ```
 
 Open the second URL (your LAN IP) in a browser on **any PC** on the same network.
