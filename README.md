@@ -1,4 +1,4 @@
-# Universal Makcu Recoil Control
+# 2PC Universal Makcu Recoil Control
 
 A browser-based control panel for the [MAKCU](https://github.com/MAKCU) hardware mouse passthrough device. Control your mouse's movement in real-time from any device on your local network—no more needing to be at the physical machine running the hardware.
 
