@@ -1,8 +1,8 @@
 # 2PC Universal Makcu Recoil Control
 
-A browser-based control panel for the [MAKCU](https://github.com/MAKCU) hardware mouse passthrough device. Control your mouse's movement in real-time from any device on your local network—no more needing to be at the physical machine running the hardware.
+A browser-based control panel for the [MAKCU][(https://github.com/superchimpy1-ctrl/Universal-Makcu-Anti-recoil/tree/main)] hardware mouse passthrough device. Control your mouse's movement in real-time from any device on your local network—no more needing to be at the physical machine running the hardware.
 
-![Makcu Multitool](https://img.shields.io/badge/status-active-success.svg)
+![Universal Makcu Recoil Control](https://img.shields.io/badge/status-active-success.svg)
 ![Python](https://img.shields.io/badge/python-3.9+-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -60,20 +60,14 @@ The console will print the local IP address:
  * For example mine was http://192.168.0.120:5000
 ```
 
-Open the second URL (your LAN IP) in a browser on **any PC** on the same network.
-
-> **⚠️ Windows Firewall:** If the second PC can't connect, open PowerShell as Administrator and run:
-> ```powershell
-> New-NetFirewallRule -DisplayName "Makcu Web" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 5000
-> ```
-
 ### Recording a Path
 
-1. Run `python recorder.py`.
+1. Run `py makcu_multitool_reader-1-8-0.py`.
 2. Hover the mouse at the start of the path you want to trace.
 3. Press **F1** to start recording.
 4. Trace the path with your mouse. Move slower where you want the playback to be slower.
 5. Press **F1** again to save. A `recorded_path.json` file will be created.
+If you are using this in a game just get the best recoil patter you can get and use the recorded path. Rename it to whatever you want and put it beside the makcu_multitool-1-8-0.py.
 
 ### Playing a Path
 
@@ -99,7 +93,7 @@ Press the side mouse button (**MB4**) at any time to disable or re-enable the pr
 | **"Connected" but UI shows nothing happening** | Verify MB4 status dot is green and you're holding Left Mouse Button. |
 | **First PC can't reach the site** | Check Windows Firewall (see above), confirm both PCs are on the same Wi-Fi/subnet, and try pinging the host IP. |
 | **Path is off / drifts** | Re-record with the latest `recorder.py` (it now saves the start position). Adjust the **Path Scale** slider. |
-| **"Circular import" error** | Your script is named `makcu.py`. Rename it to `makcu_web.py`. |
+| **"Circular import" error** | Your script is named `makcu_multitool-1-8-0.py`. Rename it to `makcu_web.py`. |
 | **MB4 doesn't toggle** | Change `MouseButton.MOUSE4` to `MouseButton.MOUSE5` in `on_button_event`. |
 
 ## 🧠 How It Works
@@ -108,7 +102,7 @@ The MAKCU device acts as a hardware mouse passthrough. The `pymakcu` library exp
 - One reads manual slider values when the mode is `manual`.
 - The other reads the JSON array when the mode is `path`, calculating per-tick delays using `time.perf_counter()` for sub-millisecond precision.
 
-The frontend is embedded directly in `makcu_web.py` as an HTML string—no build step, no bundler, no Node.js. Just open the URL and it works.
+The frontend is embedded directly in `makcu_multitool-1-8-0.py` as an HTML string—no build step, no bundler, no Node.js. Just open the URL and it works.
 
 ## 📜 License
 
