@@ -34,7 +34,7 @@ A browser-based control panel for the [MAKCU][(https://github.com/superchimpy1-c
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/makcu-multitool.git
+   git clone https://github.com/superchimpy1-ctrl/Universal-Makcu-Anti-recoil
    cd makcu-multitool
    ```
 
