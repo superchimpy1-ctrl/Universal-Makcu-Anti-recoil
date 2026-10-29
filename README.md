@@ -66,7 +66,7 @@ The console will print the local IP address:
 2. Hover the mouse at the start of the path you want to trace.
 3. Press **F1** to start recording.
 4. Trace the path with your mouse. Move slower where you want the playback to be slower.
-5. Press **F1** again to save. A `recorded_path.json` file will be created AND SAVED TO YOUR C:\ DRIVE.
+5. Press **F1** again to save. A `recorded_path.json` file will be created AND SAVED TO YOUR C:\Users\<user>.
 
 If you are using this in a game just get the best recoil patter you can get and use the recorded path. Rename it to whatever you want and put it beside the makcu_multitool-1-8-0.py.
 
