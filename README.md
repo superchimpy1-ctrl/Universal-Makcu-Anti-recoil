@@ -50,7 +50,7 @@ A browser-based control panel for the [MAKCU][(https://github.com/superchimpy1-c
 ### Starting the Control Panel
 
 ```bash
-python makcu_multitool-1-8-0.py
+py makcu_multitool-1-8-0.py
 ```
 
 The console will print the local IP address:
@@ -59,6 +59,9 @@ The console will print the local IP address:
  * Running on http://192.168.0.xxx:5000
  * For example mine was http://192.168.0.120:5000
 ```
+
+IMPORTANT NOTE: I had some problems with this on my firewall blocking it so you may have to allow port 5000 in you firewall or disable the internal firewall on your computer. This fixed not being able to access it from another computer for me.
+
 
 ### Recording a Path
 
