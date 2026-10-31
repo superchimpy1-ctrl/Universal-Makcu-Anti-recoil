@@ -60,7 +60,7 @@ The console will print the local IP address:
  * For example mine was http://192.168.0.120:5000
 ```
 
-IMPORTANT NOTE: I had some problems with this on my firewall blocking it so you may have to allow port 5000 in you firewall or disable the internal firewall on your computer. This fixed not being able to access it from another computer for me.
+IMPORTANT NOTE: I had some problems with this on my firewall blocking it so you may have to allow port 5000 in your firewall or disable the internal firewall on your computer. This fixed not being able to access it from another computer for me.
 
 
 ### Recording a Path
@@ -69,7 +69,7 @@ IMPORTANT NOTE: I had some problems with this on my firewall blocking it so you 
 2. Hover the mouse at the start of the path you want to trace.
 3. Press **F1** to start recording.
 4. Trace the path with your mouse. Move slower where you want the playback to be slower.
-5. Press **F1** again to save. A `recorded_path.json` file will be created AND SAVED TO YOUR C:\Users\<user>.
+5. Press **F1** again to save. A `recorded_path.json` file will be created AND SAVED TO YOUR C:\Users \ <user>.
 
 If you are using this in a game just get the best recoil patter you can get and use the recorded path. Rename it to whatever you want and put it beside the makcu_multitool-1-8-0.py.
 
